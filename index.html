@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Проект об интересных местах в России">
+    <meta name="keywords" content="Место, места, интересное место, Россия">
+    <meta name="author" content="Коробко Виталий">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Mesto</title>
+</head>
+<body class="root">
+
+    <header class="header">
+        <img src="./images/mesto.svg" alt="Логотип Место" class="header__logo">
+    </header>
+    <main class="page">
+    <section class="profile">
+        <div class="profile__avatar">
+            <img src="./images/my_photo.jpeg" alt="Ваша Аватарка" class="profile__avatar-image">
+        </div>
+        <div class="profile__info">
+            <h1 class="profile__name">Vitalii Korobko</h1>
+            <button class="profile__edit-button" type="button"></button>
+            <p class="profile__workplace">Junior developer</p>
+        </div>
+        <button class="profile__add-button" type="button"></button>
+    </section>
+    <section class="card">
+        <ul class="card__items">
+            <li class="card__item">
+                <img src="./images/moscow.jpeg" alt="Москва" class="card__item-image">
+                <div class="card__item-description">
+                    <h2 class="card__item-title">Москва</h2>
+                    <div class="card__item-like-container">
+                        <button class="card__item-like-button" type="button"></button>
+                    </div>
+                </div>
+            </li>
+            <li class="card__item">
+                <img src="./images/spb.jpeg" alt="Санкт-Петербург" class="card__item-image">
+                <div class="card__item-description">
+                    <h2 class="card__item-title">Санкт-Петербург</h2>
+                    <div class="card__item-like-container">
+                        <button class="card__item-like-button" type="button"></button>
+                    </div>
+                </div>
+            </li>
+            <li class="card__item">
+                <img src="./images/caucas.jpeg" alt="Кавказ" class="card__item-image">
+                <div class="card__item-description">
+                    <h2 class="card__item-title">Кавказ</h2>
+                    <div class="card__item-like-container">
+                        <button class="card__item-like-button" type="button"></button>
+                    </div>
+                </div>
+            </li>
+            <li class="card__item">
+                <img src="./images/blacksea.jpeg" alt="Чёрное море" class="card__item-image">
+                <div class="card__item-description">
+                    <h2 class="card__item-title">Чёрное море</h2>
+                    <div class="card__item-like-container">
+                        <button class="card__item-like-button" type="button"></button>
+                    </div>
+                </div>
+            </li>
+            <li class="card__item">
+                <img src="./images/kazan.jpeg" alt="Казань" class="card__item-image">
+                <div class="card__item-description">
+                    <h2 class="card__item-title">Казань</h2>
+                    <div class="card__item-like-container">
+                        <button class="card__item-like-button" type="button"></button>
+                    </div>
+                </div>
+            </li>
+            <li class="card__item">
+                <img src="./images/sevastopol.jpg" alt="Севастополь" class="card__item-image">
+                <div class="card__item-description">
+                    <h2 class="card__item-title">Севастополь</h2>
+                    <div class="card__item-like-container">
+                        <button class="card__item-like-button" type="button"></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="popup" id="popup_profile">
+        <div class="popup__form-container">
+            <button class="popup__escape-button" type="button" id="edit_close"></button>
+            <h2 class="popup__form-title">Редактировать профиль</h2>
+            <form class="popup__form" name="profile_form" id="profile_form">
+                    <label class="popup__form-input-label">
+                        <input type="text" class="popup__form-input popup__form-input_type_name" placeholder="Ваше Имя" value="Виталий Коробко" id="fullName"
+                               name="name" minlength="2" maxlength="40" required>
+                    </label>
+                    <label class="popup__form-input-label">
+                        <input type="text" class="popup__form-input popup__form-input_type_name" placeholder="Место работы" value="Студент"
+                               id="workplace" name="workplace" minlength="2" maxlength="200" required>
+                    </label>
+                <button class="popup__save-button" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+        <p class="footer__text">&COPY; 2024 Mesto Russia</p>
+    </footer>
+</body>
+</html>

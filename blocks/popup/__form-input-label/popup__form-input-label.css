@@ -1,0 +1,5 @@
+.popup__form-input-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:32.5px;
+}

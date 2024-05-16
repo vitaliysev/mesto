@@ -1,4 +1,4 @@
-@import url(https://vitaliysev.github.io/mesto/css/normalize.css);
+require = mesto/css/normalize.css
 @import url(https://vitaliysev.github.io/mesto/fonts/inter.css);
 @import url(https://vitaliysev.github.io/mesto/blocks/page/page.css);
 @import url(https://vitaliysev.github.io/mesto/blocks/root/root.css);
